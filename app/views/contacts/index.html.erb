@@ -1,5 +1,5 @@
 <h1>Address Book</h1>
 
 <% @contacts.each do |contact| %>
-    <h2><a href= "/contacts/<%= contact.id %>"> <%= contact.last_name%>, <%= contact.first_name%></a> </h2>
+    <h2><a href= "/contacts/<%= contact.id %>"> <%= contact.full_name%></a> </h2>
 <% end %>
