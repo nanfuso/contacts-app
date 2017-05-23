@@ -7,6 +7,12 @@
 <h2>Email Address: <%= @contact.email %></h2>
 <h2>Phone Number: <%= @contact.japanese_phone_number %></h2>
 <h2>Bio: <%= @contact.bio %></h2>
+<h2>Groups:</h2>
+<ul>
+    <% @contact.categories.each do |category| %>
+    <li> <%= category.name %> </li>
+    <% end %>
+</ul>
 
 <a href="/contacts/<%= @contact.id %>/edit">UPDATE | </a>
 <%= link_to "DELETE", "/contacts/#{@contact.id}", method: :delete %>

@@ -1,18 +1,121 @@
+# Contact.create!([
+#   {first_name: "Ted", last_name: "Schiller", email: "schiller_ted@yahoo.com", phone_number: "(582) 655-5103 x730", middle_name: nil, bio: nil},
+#   {first_name: "Gilberto", last_name: "Nitzsche", email: "gilberto.nitzsche@hotmail.com", phone_number: "1-335-925-7424", middle_name: nil, bio: nil},
+#   {first_name: "Rico", last_name: "McClure", email: "rico.mcclure@yahoo.com", phone_number: "569-999-4168", middle_name: nil, bio: nil},
+#   {first_name: "Alvina", last_name: "O'Connell", email: "connell_alvina_o@yahoo.com", phone_number: "616.945.3998", middle_name: nil, bio: nil},
+#   {first_name: "Walter", last_name: "Schuster", email: "walter_schuster@yahoo.com", phone_number: "109.468.4026 x7726", middle_name: nil, bio: nil},
+#   {first_name: "Wayne", last_name: "Mayer", email: "wayne_mayer@gmail.com", phone_number: "1-542-180-0176", middle_name: nil, bio: nil},
+#   {first_name: "Demarcus", last_name: "Feeney", email: "feeney_demarcus@gmail.com", phone_number: "987-723-7116", middle_name: nil, bio: nil},
+#   {first_name: "Desmond", last_name: "Yundt", email: "desmond.yundt@gmail.com", phone_number: "(749) 801-4892 x326", middle_name: nil, bio: nil},
+#   {first_name: "Eudora", last_name: "Ruecker", email: "ruecker.eudora@gmail.com", phone_number: "(394) 965-3422 x4811", middle_name: nil, bio: nil},
+#   {first_name: "Haleigh", last_name: "Rohan", email: "rohan.haleigh@gmail.com", phone_number: "(292) 234-1499 x2613", middle_name: nil, bio: nil},
+#   {first_name: "Zelma", last_name: "McLaughlin", email: "zelma_mclaughlin@yahoo.com", phone_number: "(427) 513-7646", middle_name: nil, bio: nil},
+#   {first_name: "Hellen", last_name: "Grant", email: "grant.hellen@gmail.com", phone_number: "628-295-1522 x413", middle_name: nil, bio: nil},
+#   {first_name: "Wilhelmine", last_name: "Padberg", email: "wilhelmine.padberg@gmail.com", phone_number: "724.045.6719 x912", middle_name: nil, bio: nil},
+#   {first_name: "Willow", last_name: "Sawayn", email: "willow.sawayn@gmail.com", phone_number: "(349) 216-4800 x1825", middle_name: nil, bio: nil},
+#   {first_name: "Jovani", last_name: "Glover", email: "jovani.glover@yahoo.com", phone_number: "(939) 389-5861", middle_name: nil, bio: nil},
+#   {first_name: "Donnell", last_name: "Schmitt", email: "schmitt_donnell@yahoo.com", phone_number: "682-984-8039", middle_name: nil, bio: nil},
+#   {first_name: "Sallie", last_name: "Glover", email: "sallie.glover@gmail.com", phone_number: "1-837-175-7988", middle_name: nil, bio: nil},
+#   {first_name: "Damian", last_name: "Lind", email: "lind_damian@hotmail.com", phone_number: "984.913.3213 x613", middle_name: nil, bio: nil},
+#   {first_name: "Reanna", last_name: "Bosco", email: "bosco.reanna@yahoo.com", phone_number: "581-096-0342", middle_name: nil, bio: nil},
+#   {first_name: "Harley", last_name: "McGlynn", email: "mcglynn_harley@gmail.com", phone_number: "928-316-2344", middle_name: nil, bio: nil},
+#   {first_name: "Elsie", last_name: "Huels", email: "elsie_huels@yahoo.com", phone_number: "(256) 073-9935 x18449", middle_name: nil, bio: nil},
+#   {first_name: "Karl", last_name: "Reynolds", email: "reynolds.karl@yahoo.com", phone_number: "577.847.2567 x957", middle_name: nil, bio: nil},
+#   {first_name: "Jed", last_name: "Ratke", email: "ratke.jed@hotmail.com", phone_number: "1-913-940-1047", middle_name: nil, bio: nil},
+#   {first_name: "Darrel", last_name: "Hettinger", email: "darrel_hettinger@hotmail.com", phone_number: "1-854-713-9167 x2514", middle_name: nil, bio: nil},
+#   {first_name: "Amari", last_name: "Lang", email: "lang.amari@hotmail.com", phone_number: "953.948.3802 x97030", middle_name: nil, bio: nil},
+#   {first_name: "Newell", last_name: "Legros", email: "newell_legros@yahoo.com", phone_number: "201-677-6112 x372", middle_name: nil, bio: nil},
+#   {first_name: "Oliver", last_name: "Wyman", email: "wyman_oliver@yahoo.com", phone_number: "876-993-6125", middle_name: nil, bio: nil},
+#   {first_name: "Carissa", last_name: "Hand", email: "carissa.hand@gmail.com", phone_number: "175.050.9221", middle_name: nil, bio: nil},
+#   {first_name: "Merlin", last_name: "Kohler", email: "merlin.kohler@hotmail.com", phone_number: "323.821.0338", middle_name: nil, bio: nil},
+#   {first_name: "Charles", last_name: "Gleason", email: "gleason_charles@yahoo.com", phone_number: "1-734-448-2249 x62079", middle_name: nil, bio: nil},
+#   {first_name: "Loyal", last_name: "Lockman", email: "lockman_loyal@hotmail.com", phone_number: "1-828-357-7082 x0982", middle_name: nil, bio: nil},
+#   {first_name: "Malcolm", last_name: "MacGyver", email: "macgyver.malcolm@hotmail.com", phone_number: "(364) 513-0406 x053", middle_name: nil, bio: nil},
+#   {first_name: "Vincenza", last_name: "Hodkiewicz", email: "vincenza_hodkiewicz@hotmail.com", phone_number: "235.194.3473 x318", middle_name: nil, bio: nil},
+#   {first_name: "Kathlyn", last_name: "Bashirian", email: "kathlyn_bashirian@hotmail.com", phone_number: "796.129.0234 x6579", middle_name: nil, bio: nil},
+#   {first_name: "Levi", last_name: "Gerhold", email: "levi.gerhold@hotmail.com", phone_number: "899.757.4209 x192", middle_name: nil, bio: nil},
+#   {first_name: "Haylee", last_name: "Paucek", email: "haylee.paucek@gmail.com", phone_number: "(761) 236-5685 x2199", middle_name: nil, bio: nil},
+#   {first_name: "Isac", last_name: "Beier", email: "isac.beier@hotmail.com", phone_number: "831.980.5419", middle_name: nil, bio: nil},
+#   {first_name: "Leila", last_name: "Hayes", email: "leila.hayes@hotmail.com", phone_number: "618-094-2419 x80103", middle_name: nil, bio: nil},
+#   {first_name: "Jo", last_name: "Ortiz", email: "jo.ortiz@yahoo.com", phone_number: "506.853.9536 x16209", middle_name: nil, bio: nil},
+#   {first_name: "Dayana", last_name: "Heidenreich", email: "dayana_heidenreich@gmail.com", phone_number: "729-785-4077 x05126", middle_name: nil, bio: nil},
+#   {first_name: "Edgardo", last_name: "Jacobs", email: "jacobs_edgardo@yahoo.com", phone_number: "1-469-337-8637 x37223", middle_name: nil, bio: nil},
+#   {first_name: "Lucy", last_name: "Gleichner", email: "lucy.gleichner@gmail.com", phone_number: "153-188-5351", middle_name: nil, bio: nil},
+#   {first_name: "Erna", last_name: "Rau", email: "erna_rau@hotmail.com", phone_number: "(341) 606-1514 x592", middle_name: nil, bio: nil},
+#   {first_name: "Genoveva", last_name: "Armstrong", email: "genoveva.armstrong@yahoo.com", phone_number: "782.143.8662 x482", middle_name: nil, bio: nil},
+#   {first_name: "Jalen", last_name: "Reichel", email: "jalen_reichel@yahoo.com", phone_number: "200-150-4094 x0301", middle_name: nil, bio: nil},
+#   {first_name: "Henry", last_name: "Macejkovic", email: "henry.macejkovic@yahoo.com", phone_number: "941-096-1229 x3026", middle_name: nil, bio: nil},
+#   {first_name: "Tomasa", last_name: "Mertz", email: "tomasa_mertz@yahoo.com", phone_number: "940-616-9270", middle_name: nil, bio: nil},
+#   {first_name: "Ellis", last_name: "O'Connell", email: "o_connell_ellis@gmail.com", phone_number: "450-970-4962 x862", middle_name: nil, bio: nil},
+#   {first_name: "Izabella", last_name: "Prohaska", email: "izabella_prohaska@yahoo.com", phone_number: "(993) 271-3687 x40562", middle_name: nil, bio: nil},
+#   {first_name: "Porter", last_name: "Hintz", email: "hintz.porter@gmail.com", phone_number: "1-985-666-8899 x08641", middle_name: nil, bio: nil},
+#   {first_name: "Roger", last_name: "Batz", email: "batz_roger@gmail.com", phone_number: "1-168-683-4678", middle_name: nil, bio: nil},
+#   {first_name: "Meaghan", last_name: "Jenkins", email: "jenkins_meaghan@hotmail.com", phone_number: "998.017.6449 x484", middle_name: nil, bio: nil},
+#   {first_name: "Lina", last_name: "Hauck", email: "hauck.lina@gmail.com", phone_number: "1-483-239-8124 x010", middle_name: nil, bio: nil},
+#   {first_name: "Terence", last_name: "Mueller", email: "terence.mueller@yahoo.com", phone_number: "1-756-066-9205 x052", middle_name: nil, bio: nil},
+#   {first_name: "Sean", last_name: "Walter", email: "walter.sean@yahoo.com", phone_number: "1-577-533-0355 x6542", middle_name: nil, bio: nil},
+#   {first_name: "Winston", last_name: "Kuhlman", email: "kuhlman_winston@gmail.com", phone_number: "368.448.3622 x65732", middle_name: nil, bio: nil},
+#   {first_name: "Shane", last_name: "Paucek", email: "paucek.shane@yahoo.com", phone_number: "1-763-723-4043 x511", middle_name: nil, bio: nil},
+#   {first_name: "Trace", last_name: "Bechtelar", email: "trace.bechtelar@hotmail.com", phone_number: "1-329-320-0094", middle_name: nil, bio: nil},
+#   {first_name: "Cyril", last_name: "Bruen", email: "cyril_bruen@hotmail.com", phone_number: "330-432-6901", middle_name: nil, bio: nil},
+#   {first_name: "Alisa", last_name: "Gleason", email: "gleason_alisa@gmail.com", phone_number: "1-466-075-8757 x65505", middle_name: nil, bio: nil},
+#   {first_name: "Brandt", last_name: "Prosacco", email: "brandt.prosacco@hotmail.com", phone_number: "396.220.1324 x1513", middle_name: nil, bio: nil},
+#   {first_name: "Cloyd", last_name: "Carter", email: "carter.cloyd@gmail.com", phone_number: "805.258.5822", middle_name: nil, bio: nil},
+#   {first_name: "Reggie", last_name: "Huel", email: "reggie_huel@gmail.com", phone_number: "(874) 529-4634 x27626", middle_name: nil, bio: nil},
+#   {first_name: "Sunny", last_name: "Douglas", email: "douglas.sunny@yahoo.com", phone_number: "(544) 606-6527", middle_name: nil, bio: nil},
+#   {first_name: "Ramon", last_name: "Gutkowski", email: "gutkowski_ramon@gmail.com", phone_number: "890-673-8037", middle_name: nil, bio: nil},
+#   {first_name: " Eveline", last_name: " Runter", email: " runte_eveline@hotmail.com", phone_number: " 1-489-242-3075 x638 ", middle_name: nil, bio: nil},
+#   {first_name: "Ryleigh", last_name: "Swaniawski", email: "ryleigh_swaniawski@hotmail.com", phone_number: "285.314.9045 x422", middle_name: nil, bio: nil},
+#   {first_name: "Pearlie", last_name: "Braun", email: "braun.pearlie@hotmail.com", phone_number: "(728) 309-4537", middle_name: nil, bio: nil},
+#   {first_name: "Adelia", last_name: "Boehm", email: "boehm_adelia@gmail.com", phone_number: "595-224-0236 x21511", middle_name: nil, bio: nil},
+#   {first_name: "Augustus", last_name: "Abernathy", email: "augustus.abernathy@yahoo.com", phone_number: "1-689-661-9096 x670", middle_name: nil, bio: nil},
+#   {first_name: "Lenore", last_name: "Sporer", email: "sporer_lenore@hotmail.com", phone_number: "215-611-2122 x683", middle_name: nil, bio: nil},
+#   {first_name: "Virginie", last_name: "Jakubowski", email: "virginie.jakubowski@yahoo.com", phone_number: "(914) 728-1119", middle_name: nil, bio: nil},
+#   {first_name: "Amelia", last_name: "Powlowski", email: "amelia.powlowski@yahoo.com", phone_number: "976-090-7441", middle_name: nil, bio: nil},
+#   {first_name: "Manuela", last_name: "Berge", email: "manuela.berge@hotmail.com", phone_number: "202.506.6501 x451", middle_name: nil, bio: nil},
+#   {first_name: "Hulda", last_name: "Dicki", email: "hulda.dicki@yahoo.com", phone_number: "597-805-2746 x55122", middle_name: nil, bio: nil},
+#   {first_name: "Devin", last_name: "Larkin", email: "devin.larkin@gmail.com", phone_number: "(677) 280-3210 x9987", middle_name: nil, bio: nil},
+#   {first_name: "Vivien", last_name: "Ziemann", email: "vivien.ziemann@yahoo.com", phone_number: "826.087.4324", middle_name: nil, bio: nil},
+#   {first_name: "Marco", last_name: "Glover", email: "marco.glover@gmail.com", phone_number: "813-557-7741 x06954", middle_name: nil, bio: nil},
+#   {first_name: "Broderick", last_name: "Jacobs", email: "broderick_jacobs@yahoo.com", phone_number: "197-503-7564 x520", middle_name: nil, bio: nil},
+#   {first_name: "Pink", last_name: "Nicolas", email: "pink_nicolas@yahoo.com", phone_number: "1-862-201-0043", middle_name: nil, bio: nil},
+#   {first_name: "Paige", last_name: "Thiel", email: "thiel_paige@gmail.com", phone_number: "1-475-842-0494 x03878", middle_name: nil, bio: nil},
+#   {first_name: "Eloise", last_name: "Lang", email: "eloise.lang@hotmail.com", phone_number: "440.362.2253 x3491", middle_name: nil, bio: nil},
+#   {first_name: "Sister", last_name: "Gottlieb", email: "gottlieb.sister@gmail.com", phone_number: "623.874.1745 x3041", middle_name: nil, bio: nil},
+#   {first_name: "Audra", last_name: "Nikolaus", email: "nikolaus.audra@hotmail.com", phone_number: "623.657.7042 x8815", middle_name: nil, bio: nil},
+#   {first_name: "Albertha", last_name: "Welch", email: "welch.albertha@yahoo.com", phone_number: "(655) 416-6397", middle_name: nil, bio: nil},
+#   {first_name: "Angelica", last_name: "Sipes", email: "angelica_sipes@yahoo.com", phone_number: "(659) 234-8042 x5384", middle_name: nil, bio: nil},
+#   {first_name: "Georgette", last_name: "Kreiger", email: "kreiger.georgette@hotmail.com", phone_number: "(515) 072-4194", middle_name: nil, bio: nil},
+#   {first_name: "Randi", last_name: "Gibson", email: "gibson_randi@yahoo.com", phone_number: "986.291.3477 x5970", middle_name: nil, bio: nil},
+#   {first_name: "Chaz", last_name: "Lemke", email: "lemke.chaz@hotmail.com", phone_number: "(413) 508-6309 x3804", middle_name: nil, bio: nil},
+#   {first_name: "Modesto", last_name: "Hansen", email: "modesto_hansen@hotmail.com", phone_number: "1-203-260-2252 x19370", middle_name: nil, bio: nil},
+#   {first_name: "Retta", last_name: "Smitham", email: "smitham_retta@gmail.com", phone_number: "920.803.2650 x77360", middle_name: nil, bio: nil},
+#   {first_name: "Giovanna", last_name: "Treutel", email: "treutel.giovanna@gmail.com", phone_number: "(414) 793-5615", middle_name: nil, bio: nil},
+#   {first_name: "Barrett", last_name: "Borer", email: "barrett_borer@gmail.com", phone_number: "264-345-9703 x885", middle_name: nil, bio: nil},
+#   {first_name: "Cleta", last_name: "Tillman", email: "cleta.tillman@gmail.com", phone_number: "1-259-065-6658", middle_name: nil, bio: nil},
+#   {first_name: "Cristina", last_name: "Cronin", email: "cristina_cronin@gmail.com", phone_number: "1-630-854-9106 x012", middle_name: nil, bio: nil},
+#   {first_name: "Houston", last_name: "Beahan", email: "houston_beahan@hotmail.com", phone_number: "160.667.4239", middle_name: nil, bio: nil},
+#   {first_name: "Jamil", last_name: "Hoeger", email: "jamil.hoeger@hotmail.com", phone_number: "(446) 068-0000 x3011", middle_name: nil, bio: nil},
+#   {first_name: "Lexi", last_name: "Bartoletti", email: "lexi.bartoletti@hotmail.com", phone_number: "585-606-6953", middle_name: nil, bio: nil},
+#   {first_name: " Natale", last_name: " Anfuso", email: " nanfuso@gmail.com", phone_number: " 123-456-1234", middle_name: nil, bio: nil},
+#   {first_name: "Addie", last_name: "CaDavid", email: "acadavid@gmail.com", phone_number: "567-098-1234", middle_name: nil, bio: nil},
+#   {first_name: " Adelyn", last_name: " Cadavid", email: " addie123@aol.com", phone_number: " 765-034-5687 ", middle_name: " Eli", bio: "Hi, my name is Addie and I LOVE CODING!!!!!!!!"}
+# ])
 
+# 1 - friends
+# 2 - family
+# 3 - business
+# 4 - never call
 
-100.times do | |
-    first_name = Faker::Name.first_name
-    last_name = Faker::Name.last_name
+contact_ids = Contact.pluck(:id)
+category_ids = Category.pluck(:id)
 
+contact_ids.each do |c_id|
+  selected_category_ids = category_ids.sample(rand(1..3))
 
-
-contact = Contact.create(
-                        first_name: first_name, 
-                        last_name: last_name, 
-                        email: Faker::Internet.free_email("#{first_name} #{last_name}") , 
-                        phone_number: Faker::PhoneNumber.phone_number
-                        )
-
+  selected_category_ids.each do |g_id|
+  CategoryContact.create!(contact_id: c_id, category_id: g_id)
+  end
 end
 
-`say "I completed my task"`
+
